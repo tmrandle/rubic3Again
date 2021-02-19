@@ -1,0 +1,122 @@
+@import "./vendor/normalize";
+@import "./partials/_colors";
+@import "./partials/_typography";
+@import "./partials/_mixins";
+
+body{
+    background-color: $backgroundColor;
+   
+    header{
+        height: 100px;
+        width: 100%;
+        margin: 0px 0px 5px 0px;
+        display: grid;
+        grid-template-rows: 80px;
+        grid-template-columns: 1fr;
+        background-color: $headerBackColor;
+
+        h1{
+           height: 80px;
+           width: 1fr;
+           font-family: $headerFont; 
+           font-size: $headerFontSize;
+           color: $lightText;
+           text-align: center;
+        }
+
+        // h2{
+        //     height: auto;
+        //     background-color: $headerBackColor;
+        //     color: $lightText;
+        //     text-align: center;
+
+        // }
+    }
+
+    .navBar{
+        height: 80px;
+        width: 100%;
+        ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        li{
+            padding: 15px;
+            list-style: none;
+            color: black;
+            a{
+            text-decoration: none;
+            }
+        }
+        }
+    }
+
+    .content{
+        gap: 15px;
+        height: 450px;
+        width: 100%;
+        margin: 40px 0px 20px 0px;
+        background-color: ivory;
+        display: grid;
+        grid-template-rows: 180px auto 90px;
+        grid-template-columns: 1fr;
+       
+      
+        grid-template-areas:
+         "welcome"
+         "math"
+         "footer";
+         justify-content: center;
+         align-items: center;
+
+        .welcome{
+             height: 200px;
+             width: 100%;
+             margin: 20px 0px;
+             padding: 10px;
+             grid-area: welcome;
+             text-align: center;
+             color: $lightText;
+             font-family: $bodyFont;
+             background-color: $bodyBackColor;
+            
+         }
+
+        .math{
+            height: 150px;
+            width: 100%;
+            margin: 20px 0px;
+            padding: 10px;
+            grid-area: math;
+            text-align: center;
+            color: $lightText;
+            font-family: $bodyFont;
+            background-color: $bodyBackColor;
+                      
+         }
+
+         footer{
+             height: 90px;
+             width: 100%;
+             margin: 20px 0px;
+             padding: 5px;
+             grid-area: footer;
+             text-align: center;
+             color: $lightText;
+             font-family: $bodyFont;
+             font-size: 11px;
+             background-color: $headerBackColor;
+             display: flex;
+             flex-flow: row nowrap;
+             justify-content: center;
+             align-items: center;
+             P{
+                 margin: 15px;
+             }
+         }
+
+         
+
+    }
+
+}
