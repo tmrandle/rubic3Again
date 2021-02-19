@@ -47,7 +47,7 @@ liLinks[i].setAttribute("style", "color: blue");
 navList.addEventListener("mouseover", function(event){
     //highlights the mouseover target red on mouseover
     event.target.style.color = "red";
-    //reset the color after a timeout 0f 700
+    //reset the color after a timeout of 700
     setTimeout(function(){
         event.target.style.color ="blue";
     }, 700);

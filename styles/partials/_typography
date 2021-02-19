@@ -5,5 +5,5 @@
 
 $headerFont: 'Courgette', cursive;
 $bodyFont: 'Noto Sans JP', sans-serif;
-$headerFontSize: 2 rem;
+$headerFontSize: 2rem;
 $smallFontSize: 14px;
