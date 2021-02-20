@@ -107,7 +107,7 @@ else{
     document.getElementById('guessSum').innerHTML = ("The sum of your number, " + guess + " , plus 10 is " + guessSum + " .");
 }
 
-//This section gets ElementByID-footer, creates a p element, creates at text node, and appends child to footer
+//This section gets ElementById-footer, creates a p element, creates at text node, and appends child to footer
 //uses the getElementByID, createElement, createTextNode, and appendChild
 footer = document.getElementById("footer");
 console.log(footer);
